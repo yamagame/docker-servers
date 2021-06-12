@@ -1,0 +1,14 @@
+GET http://localhost:4000/exec
+content-type:application/json
+
+{
+  "url": "http://web-5000:5000/port"
+}
+
+###
+GET http://localhost:5000/exec
+content-type:application/json
+
+{
+  "url": "http://web-4000:4000/port"
+}
